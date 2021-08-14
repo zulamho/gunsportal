@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const reviewSchema = mongoose.Schema({
   author: String,
   text: String,
-  review: {
+  weaponReview: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Weapon",
   },
