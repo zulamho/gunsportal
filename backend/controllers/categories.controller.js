@@ -6,7 +6,6 @@ module.exports.categoryController = {
     try {
       await Category.create({
         name: req.body.name,
-        weaponCategory: req.body.weaponCategory,
       });
       res.json("Категория добавлена!");
     } catch (err) {
